@@ -56,6 +56,8 @@ public class ClientExample {
 	 * @throws SignatureException
 	 * @throws Exception
 	 */
+
+		
 	public static void main(String[] args) throws IOException,
 			InvalidKeySpecException, NoSuchAlgorithmException, ClientException,
 			InvalidKeyException, SignatureException, Exception {
@@ -194,7 +196,7 @@ public class ClientExample {
 					+ "client.read(GUID) // GUID= " + guid + "\n  "
 					+ e.getMessage());
 		}
-
+		client.getAliases(guid); //change made by Akshat Dhankher
 		client.close();
 		System.out.println("\nclient.close() // test successful");
 	}
